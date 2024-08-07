@@ -186,10 +186,12 @@
             display: flex;
             justify-content: space-around;
             margin: 20px 0;
+            flex-wrap: wrap;
         }
 
         .progress-step {
             text-align: center;
+            margin: 10px;
         }
 
         .progress-step img {
@@ -218,6 +220,85 @@
 
         .client-logo img:hover {
             filter: grayscale(0%);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .hero {
+                height: 40vh;
+                padding: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .header a {
+                font-size: 1em;
+                margin: 0 5px;
+            }
+
+            .header img {
+                width: 16px;
+                height: 16px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+                font-size: 1em;
+            }
+
+            .testimonial, .benefit {
+                margin: 10px 0;
+                padding: 10px;
+            }
+
+            .progress {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .progress-step {
+                margin: 20px 0;
+            }
+
+            .progress-step img {
+                width: 50px;
+                height: 50px;
+            }
+
+            .progress-title {
+                font-size: 1em;
+            }
+
+            .client-logo img {
+                max-width: 80px;
+                margin: 5px;
+            }
+
+            .section {
+                margin: 20px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.9em;
+            }
+
+            p {
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            .progress-title {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -254,8 +335,7 @@
             <iframe width="100%" height="400" src="https://www.youtube.com/embed/_9kXM9VKLbY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <p>Welcome to Majestic Transformations, where we guide you through mastering both business and personal growth. Jon Dipilato offers a range of consulting programs designed to bring clarity, confidence, and strategic insight into your leadership and personal endeavors.</p>
-        <a class="btn" href="https://calendly.com/
-majestictransformation365/your-success-step" target="_blank">Learn More</a>
+        <a class="btn" href="https://mymajestictransformations.com" target="_blank">Learn More</a>
     </div>
     <div class="container section">
         <h2>Our Programs</h2>
@@ -308,7 +388,7 @@ majestictransformation365/your-success-step" target="_blank">Learn More</a>
                 <p class="testimonial-author">- Sarah T., CEO</p>
             </div>
             <div class="testimonial">
-                <img src=""C:\Users\Jonny\OneDrive\Documents\new website code\MAjestic landing page new\Image for hero section\testimonails liam.jpeg"" alt="Testimonial Author 2" width="80" height="80">
+                <img src="path-to-person2-image.jpg" alt="Testimonial Author 2" width="80" height="80">
                 <p>"The Elite Mastery Program is worth every penny. The personalized mentorship and advanced courses have elevated my career to new heights."</p>
                 <p class="testimonial-author">- Mark B., Executive</p>
             </div>
@@ -331,8 +411,7 @@ majestictransformation365/your-success-step" target="_blank">Learn More</a>
     <div class="container section">
         <h2>Why Choose Us?</h2>
         <p>At Majestic Transformations, we believe in providing you with the tools and techniques needed to succeed in both your professional and personal life. Our programs are designed to offer actionable strategies, expert guidance, and a supportive community to help you achieve your goals. Join us and start your transformation journey today.</p>
-        <a class="btn" href="https://calendly.com/
-majestictransformation365/your-success-step" target="_blank">Start Your Journey</a>
+        <a class="btn" href="https://mymajestictransformations.com" target="_blank">Start Your Journey</a>
         <a class="btn" href="https://calendly.com/majestictransformation365/your-success-step" target="_blank">Schedule Your Free Consultation</a>
     </div>
 </body>
