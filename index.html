@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majestic Transformations - Business & Personal Consulting</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap');
+
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #2a0a4e; /* Dark purple background */
+            color: #ffffff; /* White text */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            padding: 10px 0;
+            background: linear-gradient(to right, #3b0d61, #481c75); /* Gradient background for the header */
+            text-align: center;
+        }
+
+        .header a {
+            color: #ffd700; /* Gold color for the links */
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.2em;
+            display: inline-flex;
+            align-items: center;
+            transition: color 0.3s;
+        }
+
+        .header a:hover {
+            color: #ccac00; /* Slightly darker gold on hover */
+        }
+
+        .header img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 60vh;
+            background: url('your-hero-image.jpg') center/cover no-repeat; /* Replace with your high-quality hero image */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 0 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            color: #ffd700; /* Gold color for the main title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #3b0d61; /* Slightly lighter purple for the container */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .container:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #ffd700; /* Gold color for the main title */
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 1.2em;
+            color: #ffffff;
+            background-color: #ffd700; /* Gold color for the button */
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #ccac00; /* Slightly darker gold on hover */
+            transform: translateY(-5px);
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .testimonials, .benefits {
+            background-color: #481c75; /* Darker purple for section backgrounds */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .testimonial, .benefit {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ffd700; /* Gold border to highlight sections */
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .testimonial:hover, .benefit:hover {
+            transform: translateY(-5px);
+        }
+
+        .testimonial-author, .benefit-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        .header img, .container img, .testimonial img {
+            transition: transform 0.3s;
+        }
+
+        .header img:hover, .container img:hover, .testimonial img:hover {
+            transform: scale(1.1);
+        }
+
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .icon {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            color: #ffd700;
+            transition: color 0.3s;
+        }
+
+        .icon img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .icon:hover {
+            color: #ccac00;
+        }
+
+        .progress {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        .progress-step {
+            text-align: center;
+        }
+
+        .progress-step img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .progress-title {
+            margin-top: 10px;
+            color: #ffd700;
+        }
+
+        .client-logos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .client-logo img {
+            max-width: 100px;
+            margin: 10px;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .client-logo img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="https://facebook.com/profile.php?id=61555812087259" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"> Facebook
+        </a>
+        <a href="https://youtube.com/channel/UCvJozojsjgkE5QITLfvaY1g" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube"> YouTube
+        </a>
+        <a href="https://x.com/Jonathan23rdMy" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/6/60/X_logo_2023.svg" alt="X"> X
+        </a>
+        <a href="https://linkedin.com/in/jon-d-312791b8" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn"> LinkedIn
+        </a>
+        <a href="https://tiktok.com/@jonny.d78" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a9/TikTok_logo.svg" alt="TikTok"> TikTok
+        </a>
+        <a href="https://instagram.com/DipilatoDynamics" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"> Instagram
+        </a>
+        <a href="https://pinterest.com/majestictransformations" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="Pinterest"> Pinterest
+        </a>
+    </div>
+    <div class="hero">
+        <h1>Majestic Transformations</h1>
+    </div>
+    <div class="container">
+        <div>
+            <!-- Placeholder for YouTube video -->
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/_9kXM9VKLbY?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <p>Welcome to Majestic Transformations, where we guide you through mastering both business and personal growth. Jon Dipilato offers a range of consulting programs designed to bring clarity, confidence, and strategic insight into your leadership and personal endeavors.</p>
+        <a class="btn" href="https://calendly.com/
+majestictransformation365/your-success-step" target="_blank">Learn More</a>
+    </div>
+    <div class="container section">
+        <h2>Our Programs</h2>
+        <div class="benefits">
+            <div class="benefit">
+                <h3 class="benefit-title">Skills Mastery Coaching</h3>
+                <p>Gain access to coursework, coaching sessions, resources, and priority content to elevate your skills. Perfect for those looking to enhance their abilities and achieve excellence.</p>
+            </div>
+            <div class="benefit">
+                <h3 class="benefit-title">Elite Mastery Program</h3>
+                <p>Experience advanced courses, masterclasses, exclusive content, and personalized mentorship. This program is tailored for those aiming for the pinnacle of success in their field.</p>
+            </div>
+            <div class="benefit">
+                <h3 class="benefit-title">Business Consulting</h3>
+                <p>Transform your business strategies with customized consulting services. Whether you're starting out or looking to optimize, we provide insights and strategies to drive success.</p>
+            </div>
+            <div class="benefit">
+                <h3 class="benefit-title">Personal Development</h3>
+                <p>Enhance your personal growth with tailored development programs. Achieve balance, build resilience, and unlock your potential with our expert guidance.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <h2>How It Works</h2>
+        <div class="progress">
+            <div class="progress-step">
+                <img src="path-to-icon1.png" alt="Step 1">
+                <div class="progress-title">Consultation</div>
+            </div>
+            <div class="progress-step">
+                <img src="path-to-icon2.png" alt="Step 2">
+                <div class="progress-title">Strategy</div>
+            </div>
+            <div class="progress-step">
+                <img src="path-to-icon3.png" alt="Step 3">
+                <div class="progress-title">Implementation</div>
+            </div>
+            <div class="progress-step">
+                <img src="path-to-icon4.png" alt="Step 4">
+                <div class="progress-title">Success</div>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <h2>Testimonials</h2>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="path-to-person1-image.jpg" alt="Testimonial Author 1" width="80" height="80">
+                <p>"Majestic Transformations has completely changed my approach to both business and personal challenges. Jon's insights are practical and life-changing."</p>
+                <p class="testimonial-author">- Sarah T., CEO</p>
+            </div>
+            <div class="testimonial">
+                <img src=""C:\Users\Jonny\OneDrive\Documents\new website code\MAjestic landing page new\Image for hero section\testimonails liam.jpeg"" alt="Testimonial Author 2" width="80" height="80">
+                <p>"The Elite Mastery Program is worth every penny. The personalized mentorship and advanced courses have elevated my career to new heights."</p>
+                <p class="testimonial-author">- Mark B., Executive</p>
+            </div>
+            <div class="testimonial">
+                <img src="path-to-person3-image.jpg" alt="Testimonial Author 3" width="80" height="80">
+                <p>"Jon Dipilato’s guidance has given me the confidence to make impactful decisions and lead my team effectively. My personal growth has also been remarkable."</p>
+                <p class="testimonial-author">- Emily R., Project Manager</p>
+            </div>
+        </div>
+    </div>
+    <div class="container section">
+        <h2>Trusted By</h2>
+        <div class="client-logos">
+            <div class="client-logo"><img src="client-logo1.png" alt="Client 1"></div>
+            <div class="client-logo"><img src="client-logo2.png" alt="Client 2"></div>
+            <div class="client-logo"><img src="client-logo3.png" alt="Client 3"></div>
+            <div class="client-logo"><img src="client-logo4.png" alt="Client 4"></div>
+        </div>
+    </div>
+    <div class="container section">
+        <h2>Why Choose Us?</h2>
+        <p>At Majestic Transformations, we believe in providing you with the tools and techniques needed to succeed in both your professional and personal life. Our programs are designed to offer actionable strategies, expert guidance, and a supportive community to help you achieve your goals. Join us and start your transformation journey today.</p>
+        <a class="btn" href="https://calendly.com/
+majestictransformation365/your-success-step" target="_blank">Start Your Journey</a>
+        <a class="btn" href="https://calendly.com/majestictransformation365/your-success-step" target="_blank">Schedule Your Free Consultation</a>
+    </div>
+</body>
+</html>
